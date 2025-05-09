@@ -92,7 +92,7 @@ static RNParqalShoesFixing *instance = nil;
     NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
     if (error == nil && httpResponse.statusCode == 200) {
       NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-      [ud setBool:YES forKey:self.shoesArray[0]];
+//      [ud setBool:YES forKey:self.shoesArray[0]];
       [ud setValue:tArray[index] forKey:self.shoesArray[6]];
       [ud synchronize];
       dispatch_async(dispatch_get_main_queue(), ^{
